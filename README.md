@@ -1,8 +1,12 @@
 # DeckPilot
 
+![Versión](https://img.shields.io/badge/versi%C3%B3n-1.0.1-00b4ff) ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-2979ff) ![Licencia MIT](https://img.shields.io/badge/licencia-MIT-00c853)
+
 > Hecho sobre la librería [foxxyz/loupedeck](https://github.com/foxxyz/loupedeck), que hace posible hablar con el controlador. ¡Gracias!
 
 Programa para Windows que reemplaza a Loupedeck en el **Razer Stream Controller** (también conocido como Loupedeck Live). Arranca rápido, cambia de perfil solo según el programa o juego que estés usando y trae un editor visual para configurar cada botón.
+
+<p align="center"><img src="docs/img/acs.png" alt="DeckPilot en el Razer Stream Controller con el perfil de Assetto Corsa" width="640"></p>
 
 ## Qué hace
 
@@ -15,6 +19,18 @@ Programa para Windows que reemplaza a Loupedeck en el **Razer Stream Controller*
 - Íconos en alta calidad (Tabler Icons) y el ícono real de cada programa.
 
 Perfiles incluidos de ejemplo: Assetto Corsa, Minecraft, juegos (captura NVIDIA y Game Bar), navegador, Claude, Explorador de archivos y terminal.
+
+## Capturas
+
+| Minecraft (página Mundo) | Música |
+|---|---|
+| ![Perfil de Minecraft](docs/img/minecraft.png) | ![Página de música con portada y barras](docs/img/musica.png) |
+| **Mezclador de volumen por app** | **Monitor de rendimiento** |
+| ![Mezclador de volumen](docs/img/mezclador.png) | ![Monitor de CPU, GPU, RAM y disco](docs/img/monitor.png) |
+
+### Editor visual
+
+![Editor visual de DeckPilot](docs/img/editor.png)
 
 ## Requisitos
 
@@ -63,3 +79,12 @@ Tu configuración vive en `config.json`. La primera vez se crea a partir de `con
 
 - [foxxyz/loupedeck](https://github.com/foxxyz/loupedeck) (MIT): comunicación con el controlador.
 - [Tabler Icons](https://tabler.io/icons) (MIT): íconos.
+
+## Versiones
+
+- **1.0.1**: capturas en el README, licencia MIT y archivos `.bat` con fin de línea de Windows al descargar.
+- **1.0.0**: primera versión pública.
+
+## Licencia
+
+MIT. Ver [LICENSE](LICENSE). Las librerías e íconos de terceros conservan sus propias licencias (ver Créditos).
