@@ -1,0 +1,1561 @@
+{
+  "_ayuda": "Lo mas facil: abre el editor (acceso directo \"Editar DeckPilot\" o manten presionado el boton Home 1.5 s). Si editas este archivo a mano, reinicia DeckPilot despues de guardar.",
+  "mantenerTeclaMs": 90,
+  "brillo": 0.8,
+  "perfilPorDefecto": "inicio",
+  "reglas": [
+    {
+      "procesos": [
+        "acs"
+      ],
+      "perfil": "acs"
+    },
+    {
+      "procesos": [
+        "javaw",
+        "minecraft.windows"
+      ],
+      "perfil": "minecraft"
+    },
+    {
+      "procesos": [
+        "liftoff",
+        "assettocorsaevo",
+        "acr",
+        "peak",
+        "repo",
+        "ride-win64-shipping",
+        "ride",
+        "valorant-win64-shipping",
+        "hogwartslegacy",
+        "fc25"
+      ],
+      "perfil": "juego"
+    },
+    {
+      "procesos": [
+        "msedge",
+        "brave",
+        "chrome"
+      ],
+      "perfil": "navegador"
+    },
+    {
+      "procesos": [
+        "claude"
+      ],
+      "perfil": "claude"
+    },
+    {
+      "procesos": [
+        "explorer"
+      ],
+      "perfil": "archivos"
+    },
+    {
+      "procesos": [
+        "windowsterminal",
+        "cmd",
+        "powershell",
+        "pwsh",
+        "conhost"
+      ],
+      "perfil": "terminal"
+    }
+  ],
+  "perillas": {
+    "knobTL": {
+      "nombre": "Volumen",
+      "girar": "volumen",
+      "presionar": {
+        "tipo": "media",
+        "tecla": "Mute"
+      },
+      "icono": "volume"
+    },
+    "knobCL": {
+      "nombre": "Brillo",
+      "girar": "brillo",
+      "icono": "brightness-up"
+    }
+  },
+  "perfiles": {
+    "inicio": {
+      "nombre": "Inicio",
+      "paginas": [
+        {
+          "nombre": "Apps",
+          "color": "#00b4ff",
+          "teclas": [
+            {
+              "texto": "Steam",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "C:\\Program Files (x86)\\Steam\\Steam.exe"
+              }
+            },
+            {
+              "texto": "Discord",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "%LOCALAPPDATA%\\Discord\\Update.exe",
+                "args": "--processStart Discord.exe"
+              }
+            },
+            {
+              "texto": "Spotify",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "%APPDATA%\\Spotify\\Spotify.exe"
+              }
+            },
+            {
+              "texto": "OBS",
+              "color": "#607d8b",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe"
+              }
+            },
+            {
+              "texto": "Edge",
+              "color": "#00b4ff",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+              }
+            },
+            {
+              "texto": "Chrome",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+              }
+            },
+            {
+              "texto": "Minecraft",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "shell:AppsFolder\\Microsoft.4297127D64EC6_8wekyb3d8bbwe!Minecraft"
+              },
+              "icono_respaldo": "app-window"
+            },
+            {
+              "texto": "Archivos",
+              "color": "#ffb300",
+              "icono": "folder-open",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "shell:Downloads"
+              }
+            },
+            {
+              "texto": "Editar",
+              "color": "#00bfa5",
+              "icono": "adjustments-horizontal",
+              "accion": {
+                "tipo": "editor"
+              }
+            },
+            {
+              "texto": "Loupedeck",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "volverALoupedeck"
+              },
+              "icono": "arrow-back-up"
+            },
+            null,
+            null
+          ]
+        },
+        {
+          "nombre": "Música",
+          "color": "#ffc400",
+          "teclas": [
+            {
+              "texto": "Aplausos",
+              "color": "#ff9100",
+              "accion": {
+                "tipo": "sonido",
+                "archivo": "%LOCALAPPDATA%\\Logi\\LogiPluginService\\Media\\Sounds\\LoupedeckSoundPack\\clapping.wav"
+              },
+              "icono": "confetti"
+            },
+            {
+              "texto": "Badum",
+              "color": "#ff9100",
+              "accion": {
+                "tipo": "sonido",
+                "archivo": "%LOCALAPPDATA%\\Logi\\LogiPluginService\\Media\\Sounds\\LoupedeckSoundPack\\budum-tsih.wav"
+              },
+              "icono": "music"
+            },
+            {
+              "texto": "Triste",
+              "color": "#ff9100",
+              "accion": {
+                "tipo": "sonido",
+                "archivo": "%LOCALAPPDATA%\\Logi\\LogiPluginService\\Media\\Sounds\\LoupedeckSoundPack\\sad trombone.wav"
+              },
+              "icono": "mood-sad"
+            },
+            {
+              "texto": "Boom",
+              "color": "#ff9100",
+              "accion": {
+                "tipo": "sonido",
+                "archivo": "%LOCALAPPDATA%\\Logi\\LogiPluginService\\Media\\Sounds\\LoupedeckSoundPack\\boom.wav"
+              },
+              "icono": "bomb"
+            },
+            {
+              "texto": "Anterior",
+              "color": "#0091ea",
+              "accion": {
+                "tipo": "media",
+                "tecla": "Prev"
+              },
+              "icono": "player-track-prev"
+            },
+            {
+              "texto": "Play",
+              "color": "#0091ea",
+              "accion": {
+                "tipo": "media",
+                "tecla": "PlayPause"
+              },
+              "icono": "player-play"
+            },
+            {
+              "texto": "Siguiente",
+              "color": "#0091ea",
+              "accion": {
+                "tipo": "media",
+                "tecla": "Next"
+              },
+              "icono": "player-track-next"
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "visualizador": true
+        }
+      ]
+    },
+    "acs": {
+      "nombre": "Assetto Corsa",
+      "paginas": [
+        {
+          "nombre": "Pista",
+          "color": "#e74c3c",
+          "teclas": [
+            {
+              "texto": "Luces",
+              "color": "#ffc400",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "L"
+              },
+              "icono": "bulb"
+            },
+            {
+              "texto": "Flash",
+              "color": "#ffa000",
+              "accion": {
+                "tipo": "ciclo",
+                "teclas": "K",
+                "mantenerMs": 150,
+                "intervaloMs": 400
+              },
+              "icono": "bolt",
+              "insignia": "AUTO"
+            },
+            {
+              "texto": "Pit limiter",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "P"
+              },
+              "icono": "gauge"
+            },
+            {
+              "texto": "Arranque",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "I"
+              },
+              "icono": "engine"
+            },
+            {
+              "texto": "Limpia +",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+2"
+              },
+              "icono": "wiper-wash",
+              "insignia": "+"
+            },
+            {
+              "texto": "Limpia −",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Num1"
+              },
+              "icono": "wiper",
+              "insignia": "−"
+            },
+            {
+              "texto": "Limpia off",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Num0"
+              },
+              "icono": "wiper",
+              "insignia": "OFF"
+            },
+            {
+              "texto": "Claxon",
+              "color": "#ffab00",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "H",
+                "modo": "mantener"
+              },
+              "icono": "speakerphone"
+            },
+            {
+              "texto": "Direccional",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Left"
+              },
+              "icono": "arrow-big-left"
+            },
+            {
+              "texto": "Intermitentes",
+              "color": "#ff9100",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Down"
+              },
+              "icono": "alert-triangle"
+            },
+            {
+              "texto": "Direccional",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Right"
+              },
+              "icono": "arrow-big-right"
+            },
+            {
+              "texto": "Pausa",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Esc"
+              },
+              "icono": "player-pause"
+            }
+          ]
+        },
+        {
+          "nombre": "Vista",
+          "color": "#9b59b6",
+          "teclas": [
+            {
+              "texto": "Cámara",
+              "color": "#b14dff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F1"
+              },
+              "icono": "camera"
+            },
+            {
+              "texto": "Mirar izq.",
+              "color": "#b14dff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Q",
+                "modo": "mantener"
+              },
+              "icono": "arrow-bar-to-left"
+            },
+            {
+              "texto": "Mirar atrás",
+              "color": "#b14dff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "W",
+                "modo": "mantener"
+              },
+              "icono": "rotate"
+            },
+            {
+              "texto": "Mirar der.",
+              "color": "#b14dff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "E",
+                "modo": "mantener"
+              },
+              "icono": "arrow-bar-to-right"
+            },
+            {
+              "texto": "Aceptar",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Y"
+              },
+              "icono": "check"
+            },
+            {
+              "texto": "Rechazar",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "N"
+              },
+              "icono": "x"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "nombre": "Captura",
+          "color": "#ff2e7e",
+          "teclas": [
+            {
+              "texto": "Captura",
+              "icono": "camera",
+              "color": "#ff2e7e",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F1"
+              }
+            },
+            {
+              "texto": "Guardar clip",
+              "icono": "history",
+              "color": "#f50057",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F10"
+              }
+            },
+            {
+              "texto": "Grabar",
+              "icono": "player-record",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F9"
+              }
+            },
+            {
+              "texto": "Rendimiento",
+              "icono": "chart-bar",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+R"
+              }
+            },
+            {
+              "texto": "Game Bar",
+              "icono": "device-gamepad-2",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Win+G"
+              }
+            },
+            {
+              "texto": "Captura Win",
+              "icono": "screenshot",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Win+Alt+PrtSc"
+              }
+            },
+            {
+              "texto": "Pausa",
+              "icono": "player-pause",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Esc"
+              }
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "perillas": {
+        "knobBL": {
+          "nombre": "Freno motor",
+          "icono": "engine",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "U",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "O",
+              "mantenerMs": 60
+            }
+          }
+        },
+        "knobTR": {
+          "nombre": "TC",
+          "icono": "wheel",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "Z",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "X",
+              "mantenerMs": 60
+            }
+          },
+          "presionar": {
+            "tipo": "tecla",
+            "teclas": "T",
+            "mantenerMs": 90
+          }
+        },
+        "knobCR": {
+          "nombre": "Reparto",
+          "icono": "scale",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "B",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "V",
+              "mantenerMs": 60
+            }
+          }
+        },
+        "knobBR": {
+          "nombre": "ABS",
+          "icono": "circle-letter-a",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "0",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "6",
+              "mantenerMs": 60
+            }
+          },
+          "presionar": {
+            "tipo": "tecla",
+            "teclas": "A",
+            "mantenerMs": 90
+          }
+        }
+      }
+    },
+    "juego": {
+      "nombre": "Juegos",
+      "paginas": [
+        {
+          "nombre": "Captura",
+          "color": "#ff2e7e",
+          "teclas": [
+            {
+              "texto": "Captura",
+              "icono": "camera",
+              "color": "#ff2e7e",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F1"
+              }
+            },
+            {
+              "texto": "Guardar clip",
+              "icono": "history",
+              "color": "#f50057",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F10"
+              }
+            },
+            {
+              "texto": "Grabar",
+              "icono": "player-record",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F9"
+              }
+            },
+            {
+              "texto": "Rendimiento",
+              "icono": "chart-bar",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+R"
+              }
+            },
+            {
+              "texto": "Game Bar",
+              "icono": "device-gamepad-2",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Win+G"
+              }
+            },
+            {
+              "texto": "Captura Win",
+              "icono": "screenshot",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Win+Alt+PrtSc"
+              }
+            },
+            {
+              "texto": "Pausa",
+              "icono": "player-pause",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Esc"
+              }
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "minecraft": {
+      "nombre": "Minecraft",
+      "paginas": [
+        {
+          "nombre": "Minecraft",
+          "color": "#00c853",
+          "teclas": [
+            {
+              "texto": "Inventario",
+              "icono": "package",
+              "color": "#ff7a3d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "E"
+              }
+            },
+            {
+              "texto": "Mochila",
+              "icono": "backpack",
+              "color": "#ff7a3d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "B"
+              }
+            },
+            {
+              "texto": "Chat",
+              "icono": "message",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "T"
+              }
+            },
+            {
+              "texto": "Captura",
+              "icono": "photo",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F2"
+              }
+            },
+            {
+              "texto": "Jugadores",
+              "icono": "list",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Tab",
+                "modo": "mantener"
+              }
+            },
+            {
+              "texto": "Logros",
+              "icono": "trophy",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "L"
+              }
+            },
+            {
+              "texto": "Cambiar mano",
+              "icono": "arrows-exchange",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F"
+              }
+            },
+            {
+              "texto": "Soltar",
+              "icono": "arrow-bar-down",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Q"
+              }
+            },
+            {
+              "texto": "Herramienta",
+              "icono": "tool",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Z"
+              }
+            },
+            {
+              "texto": "Info bloque",
+              "icono": "info-circle",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Num1"
+              }
+            },
+            {
+              "texto": "Pantalla",
+              "icono": "maximize",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F11"
+              }
+            },
+            {
+              "texto": "Pausa",
+              "icono": "player-pause",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Esc"
+              }
+            }
+          ]
+        },
+        {
+          "nombre": "Mundo",
+          "color": "#00bfa5",
+          "teclas": [
+            {
+              "texto": "Nuevo punto",
+              "icono": "map-pin",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "B"
+              }
+            },
+            {
+              "texto": "Punto rápido",
+              "icono": "location",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "NumPlus"
+              }
+            },
+            {
+              "texto": "Mis puntos",
+              "icono": "map-pins",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "U"
+              }
+            },
+            {
+              "texto": "Mapa",
+              "icono": "map",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "M"
+              }
+            },
+            {
+              "texto": "Copiar coords",
+              "icono": "copy",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F3+C"
+              }
+            },
+            {
+              "texto": "Minimapa",
+              "icono": "settings",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Y"
+              }
+            },
+            {
+              "texto": "Shaders",
+              "icono": "sparkles",
+              "color": "#b14dff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "K"
+              },
+              "insignia": "ON/OFF"
+            },
+            {
+              "texto": "Recargar sh.",
+              "icono": "refresh",
+              "color": "#b14dff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "R"
+              }
+            },
+            {
+              "texto": "Debug",
+              "icono": "bug",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F3"
+              }
+            },
+            {
+              "texto": "Bordes chunk",
+              "icono": "border-all",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F3+G"
+              }
+            },
+            {
+              "texto": "Hitboxes",
+              "icono": "box",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F3+B"
+              }
+            },
+            {
+              "texto": "Gráfica FPS",
+              "icono": "chart-bar",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F3+2"
+              }
+            }
+          ]
+        },
+        {
+          "nombre": "Captura",
+          "color": "#ff2e7e",
+          "teclas": [
+            {
+              "texto": "Captura",
+              "icono": "camera",
+              "color": "#ff2e7e",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F1"
+              }
+            },
+            {
+              "texto": "Guardar clip",
+              "icono": "history",
+              "color": "#f50057",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F10"
+              }
+            },
+            {
+              "texto": "Grabar",
+              "icono": "player-record",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+F9"
+              }
+            },
+            {
+              "texto": "Rendimiento",
+              "icono": "chart-bar",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+R"
+              }
+            },
+            {
+              "texto": "Game Bar",
+              "icono": "device-gamepad-2",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Win+G"
+              }
+            },
+            {
+              "texto": "Captura Win",
+              "icono": "screenshot",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Win+Alt+PrtSc"
+              }
+            },
+            {
+              "texto": "Pausa",
+              "icono": "player-pause",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Esc"
+              }
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "navegador": {
+      "nombre": "Navegador",
+      "paginas": [
+        {
+          "nombre": "Navegador",
+          "color": "#0a84ff",
+          "teclas": [
+            {
+              "texto": "Atrás",
+              "icono": "arrow-left",
+              "color": "#0a84ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Left"
+              }
+            },
+            {
+              "texto": "Adelante",
+              "icono": "arrow-right",
+              "color": "#0a84ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Right"
+              }
+            },
+            {
+              "texto": "Recargar",
+              "icono": "refresh",
+              "color": "#0a84ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F5"
+              }
+            },
+            {
+              "texto": "Buscar",
+              "icono": "search",
+              "color": "#0a84ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+L"
+              }
+            },
+            {
+              "texto": "Nueva pestaña",
+              "icono": "plus",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+T"
+              }
+            },
+            {
+              "texto": "Cerrar pestaña",
+              "icono": "x",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+W"
+              }
+            },
+            {
+              "texto": "Reabrir",
+              "icono": "arrow-back-up",
+              "color": "#ff9100",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Shift+T"
+              }
+            },
+            {
+              "texto": "Privada",
+              "icono": "spy",
+              "color": "#536dfe",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Shift+N"
+              }
+            },
+            {
+              "texto": "Favorito",
+              "icono": "star",
+              "color": "#ffc400",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+D"
+              }
+            },
+            {
+              "texto": "Historial",
+              "icono": "history",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+H"
+              }
+            },
+            {
+              "texto": "Descargas",
+              "icono": "download",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+J"
+              }
+            },
+            {
+              "texto": "Pantalla completa",
+              "icono": "maximize",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F11"
+              }
+            }
+          ]
+        }
+      ],
+      "perillas": {
+        "knobTR": {
+          "nombre": "Pestañas",
+          "icono": "layout-dashboard",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+Shift+Tab",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+Tab",
+              "mantenerMs": 60
+            }
+          }
+        },
+        "knobCR": {
+          "nombre": "Zoom",
+          "icono": "zoom-in",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+-",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+=",
+              "mantenerMs": 60
+            }
+          },
+          "presionar": {
+            "tipo": "tecla",
+            "teclas": "Ctrl+0"
+          }
+        }
+      }
+    },
+    "claude": {
+      "nombre": "Claude",
+      "paginas": [
+        {
+          "nombre": "Claude",
+          "color": "#d97757",
+          "teclas": [
+            {
+              "texto": "Nuevo chat",
+              "icono": "message-plus",
+              "color": "#d97757",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+N"
+              }
+            },
+            {
+              "texto": "Dictar",
+              "icono": "microphone",
+              "color": "#d97757",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Win+H"
+              }
+            },
+            {
+              "texto": "Recorte",
+              "icono": "crop",
+              "color": "#d97757",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Win+Shift+S"
+              }
+            },
+            {
+              "texto": "Enviar",
+              "icono": "send",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Enter"
+              }
+            },
+            {
+              "texto": "Copiar",
+              "icono": "copy",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+C"
+              }
+            },
+            {
+              "texto": "Pegar",
+              "icono": "clipboard",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+V"
+              }
+            },
+            {
+              "texto": "Deshacer",
+              "icono": "arrow-back-up",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Z"
+              }
+            },
+            {
+              "texto": "Nueva línea",
+              "icono": "corner-down-left",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Shift+Enter"
+              }
+            },
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "perillas": {
+        "knobCR": {
+          "nombre": "Zoom",
+          "icono": "zoom-in",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+-",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+=",
+              "mantenerMs": 60
+            }
+          },
+          "presionar": {
+            "tipo": "tecla",
+            "teclas": "Ctrl+0"
+          }
+        }
+      }
+    },
+    "archivos": {
+      "nombre": "Archivos",
+      "paginas": [
+        {
+          "nombre": "Archivos",
+          "color": "#f4b400",
+          "teclas": [
+            {
+              "texto": "Atrás",
+              "icono": "arrow-left",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Left"
+              }
+            },
+            {
+              "texto": "Subir",
+              "icono": "arrow-up",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Up"
+              }
+            },
+            {
+              "texto": "Nueva pestaña",
+              "icono": "plus",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+T"
+              }
+            },
+            {
+              "texto": "Buscar",
+              "icono": "search",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+F"
+              }
+            },
+            {
+              "texto": "Nueva carpeta",
+              "icono": "folder-plus",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Shift+N"
+              }
+            },
+            {
+              "texto": "Renombrar",
+              "icono": "pencil",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "F2"
+              }
+            },
+            {
+              "texto": "Propiedades",
+              "icono": "info-circle",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Alt+Enter"
+              }
+            },
+            {
+              "texto": "Eliminar",
+              "icono": "trash",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Delete"
+              }
+            },
+            {
+              "texto": "Copiar",
+              "icono": "copy",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+C"
+              }
+            },
+            {
+              "texto": "Cortar",
+              "icono": "cut",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+X"
+              }
+            },
+            {
+              "texto": "Pegar",
+              "icono": "clipboard",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+V"
+              }
+            },
+            {
+              "texto": "Descargas",
+              "icono": "download",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "abrir",
+                "ruta": "%USERPROFILE%\\Downloads"
+              }
+            }
+          ]
+        }
+      ],
+      "perillas": {
+        "knobTR": {
+          "nombre": "Pestañas",
+          "icono": "layout-dashboard",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+Shift+Tab",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+Tab",
+              "mantenerMs": 60
+            }
+          }
+        }
+      }
+    },
+    "terminal": {
+      "nombre": "Terminal",
+      "paginas": [
+        {
+          "nombre": "Terminal",
+          "color": "#2ecc71",
+          "teclas": [
+            {
+              "texto": "Cancelar",
+              "icono": "hand-stop",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+C"
+              }
+            },
+            {
+              "texto": "Último comando",
+              "icono": "arrow-up",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Up"
+              }
+            },
+            {
+              "texto": "Limpiar",
+              "icono": "eraser",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "escribir",
+                "texto": "cls\n"
+              }
+            },
+            {
+              "texto": "Subir carpeta",
+              "icono": "arrow-bar-up",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "escribir",
+                "texto": "cd ..\n"
+              }
+            },
+            {
+              "texto": "Nueva pestaña",
+              "icono": "plus",
+              "color": "#00c853",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Shift+T"
+              }
+            },
+            {
+              "texto": "Cerrar pestaña",
+              "icono": "x",
+              "color": "#ff4d4d",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Shift+W"
+              }
+            },
+            {
+              "texto": "Copiar",
+              "icono": "copy",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Shift+C"
+              }
+            },
+            {
+              "texto": "Pegar",
+              "icono": "clipboard",
+              "color": "#2979ff",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Shift+V"
+              }
+            },
+            {
+              "texto": "Abrir aquí",
+              "icono": "folder-open",
+              "color": "#ffb300",
+              "accion": {
+                "tipo": "escribir",
+                "texto": "start .\n"
+              }
+            },
+            {
+              "texto": "Mi IP",
+              "icono": "network",
+              "color": "#00bfa5",
+              "accion": {
+                "tipo": "escribir",
+                "texto": "ipconfig\n"
+              }
+            },
+            {
+              "texto": "Buscar",
+              "icono": "search",
+              "color": "#5e5ce6",
+              "accion": {
+                "tipo": "tecla",
+                "teclas": "Ctrl+Shift+F"
+              }
+            },
+            null
+          ]
+        }
+      ],
+      "perillas": {
+        "knobTR": {
+          "nombre": "Pestañas",
+          "icono": "layout-dashboard",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+Shift+Tab",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+Tab",
+              "mantenerMs": 60
+            }
+          }
+        },
+        "knobCR": {
+          "nombre": "Zoom",
+          "icono": "zoom-in",
+          "girar": {
+            "izquierda": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+-",
+              "mantenerMs": 60
+            },
+            "derecha": {
+              "tipo": "tecla",
+              "teclas": "Ctrl+=",
+              "mantenerMs": 60
+            }
+          },
+          "presionar": {
+            "tipo": "tecla",
+            "teclas": "Ctrl+0"
+          }
+        }
+      }
+    }
+  },
+  "etiquetas": true,
+  "nombre": "DeckPilot",
+  "botonMonitor": 7,
+  "ignorar": [
+    "escritorio",
+    "shellexperiencehost",
+    "searchhost",
+    "startmenuexperiencehost",
+    "lockapp",
+    "textinputhost",
+    "node",
+    "applicationframehost",
+    "systemsettingsadminflows",
+    "shellhost",
+    "taskmgr",
+    "systemsettings",
+    "searchapp"
+  ],
+  "botonHome": 0,
+  "botonMezclador": 6,
+  "pasoVolumen": 2
+}

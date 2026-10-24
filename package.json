@@ -1,0 +1,15 @@
+{
+  "name": "deckpilot",
+  "version": "1.0.0",
+  "description": "DeckPilot: programa propio para el Razer Stream Controller (sin Loupedeck)",
+  "type": "module",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "loupedeck": "7.0.3",
+    "canvas": "^3.2.0"
+  }
+}

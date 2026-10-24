@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeckPilot Editor</title>
+<link rel="icon" href="/logo.ico">
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<header class="barra">
+  <div class="marca"><img src="/logo.ico" alt=""><span>DeckPilot</span><small>Editor</small></div>
+  <div id="estado" class="estado"><i></i><span>Conectando…</span></div>
+  <div class="acciones">
+    <button id="bDeshacer" class="btn icono" title="Deshacer (Ctrl+Z)" disabled>↶</button>
+    <button id="bRehacer" class="btn icono" title="Rehacer (Ctrl+Y)" disabled>↷</button>
+    <button id="bRespaldos" class="btn">Respaldos</button>
+    <button id="bAjustes" class="btn">Ajustes</button>
+    <button id="bGuardar" class="btn primario" disabled title="Ctrl+S">Guardado</button>
+  </div>
+</header>
+
+<main class="cuerpo">
+  <aside class="perfiles">
+    <h2>Perfiles</h2>
+    <ul id="listaPerfiles"></ul>
+    <button id="bNuevoPerfil" class="btn ancho">+ Nuevo perfil</button>
+    <p class="nota">El perfil cambia solo según el programa que estás usando.</p>
+  </aside>
+
+  <section class="centro">
+    <div class="cabecera">
+      <input id="nombrePerfil" class="titulo" spellcheck="false" aria-label="Nombre del perfil">
+      <div class="herramientas">
+        <span id="marcaPrincipal" class="pastilla">Principal</span>
+        <button id="bPrincipal" class="btn chico">Hacer principal</button>
+        <button id="bDuplicarPerfil" class="btn chico">Duplicar</button>
+        <button id="bBorrarPerfil" class="btn chico peligro">Eliminar</button>
+      </div>
+    </div>
+    <div class="reglas">
+      <span class="etq">Se activa cuando usas:</span>
+      <div id="chipsProcesos" class="chips"></div>
+      <button id="bAgregarPrograma" class="btn chico">+ Programa</button>
+    </div>
+
+    <nav id="pestanas" class="pestanas"></nav>
+
+    <div class="escenario">
+      <div class="tableta" id="tableta">
+        <div class="lado" id="ladoIzq"></div>
+        <div class="rejilla" id="rejilla"></div>
+        <div class="lado" id="ladoDer"></div>
+        <div class="redondos" id="redondos"></div>
+      </div>
+      <p class="ayuda">Clic para editar · Arrastra para mover · <kbd>Ctrl</kbd>+<kbd>C</kbd> / <kbd>Ctrl</kbd>+<kbd>V</kbd> copia teclas · <kbd>Supr</kbd> vacía</p>
+    </div>
+  </section>
+
+  <aside class="inspector" id="inspector"></aside>
+</main>
+
+<div id="modal" class="modal" hidden><div class="caja" id="modalCaja"></div></div>
+<div id="aviso" class="aviso" hidden></div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

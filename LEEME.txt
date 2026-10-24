@@ -1,0 +1,25 @@
+DECKPILOT - para el Razer Stream Controller (Windows)
+=====================================================
+
+INSTALAR
+  1. Instala Node.js (version LTS) desde https://nodejs.org
+  2. Pon esta carpeta donde quieras (por ejemplo Documentos\DeckPilot).
+  3. Doble clic en iniciar.bat. La primera vez instala lo necesario (1 minuto)
+     y crea en el escritorio los accesos "DeckPilot" y "Editar DeckPilot".
+  4. Si Loupedeck esta abierto, DeckPilot lo cierra (los dos no pueden usar el controlador a la vez).
+
+USAR
+  - Abre DeckPilot con su acceso directo. Deja la ventana negra minimizada.
+  - El perfil cambia solo segun el programa o juego que estes usando.
+  - Botones redondos: 1 Home (otro toque regresa a la app), 2-6 paginas,
+    7 mezclador de volumen por app, 8 monitor de rendimiento.
+
+PERSONALIZAR
+  - Doble clic en "Editar DeckPilot", o manten presionado Home 1.5 s.
+  - Clic en una tecla, y para asignarla presiona la combinacion en tu teclado.
+  - "+ Programa" elige que juegos activan cada perfil. Ctrl+S guarda al instante.
+
+VOLVER A LOUPEDECK
+  Cierra DeckPilot y abre volver_a_loupedeck.bat. DeckPilot no toca nada de Loupedeck.
+
+Mas detalles en README.md.
